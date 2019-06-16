@@ -1,0 +1,44 @@
+@import "tot";
+@import "mixin";
+.box{
+  width: 200px;
+  height: 200px;
+  a{
+    width: $width;
+    font-size: 20px;
+    .box1{
+      border: 1px solid #2ed977;
+    }
+  }
+  &:hover{
+    color: #2ed977;
+  }
+}
+.box{
+  a{
+    @include a;
+  }
+  p{
+    @include pos(100px,100px);
+  }
+}
+.footer{
+  font-size: 20px;
+  color: $color;
+  @extend .box;
+  @if $color == black{
+    color: $color;
+  }@else {
+    color: $theme;
+  }
+}
+
+@for $i from 1 to 5{
+  p-#{$i}{width: $width}
+}
+
+
+$bg:l1 l2 l3 l4 l5 l6 l7;
+@each $i in $bg{
+  a-#{$i}{content: #{$i}}
+}

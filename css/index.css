@@ -1,0 +1,57 @@
+.box, .footer {
+  width: 200px;
+  height: 200px; }
+  .box a, .footer a {
+    width: 200px;
+    font-size: 20px; }
+    .box a .box1, .footer a .box1 {
+      border: 1px solid #2ed977; }
+  .box:hover, .footer:hover {
+    color: #2ed977; }
+
+.box a, .footer a {
+  font-size: 20px;
+  color: #2ed977; }
+
+.box p, .footer p {
+  position: absolute;
+  left: 100px;
+  top: 100px; }
+
+.footer {
+  font-size: 20px;
+  color: red;
+  color: blue; }
+
+p-1 {
+  width: 200px; }
+
+p-2 {
+  width: 200px; }
+
+p-3 {
+  width: 200px; }
+
+p-4 {
+  width: 200px; }
+
+a-l1 {
+  content: l1; }
+
+a-l2 {
+  content: l2; }
+
+a-l3 {
+  content: l3; }
+
+a-l4 {
+  content: l4; }
+
+a-l5 {
+  content: l5; }
+
+a-l6 {
+  content: l6; }
+
+a-l7 {
+  content: l7; }

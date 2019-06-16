@@ -1,0 +1,18 @@
+@mixin a{
+  font-size: 20px;
+  color: #2ed977;
+}
+@mixin pos($l,$t){
+  position: absolute;
+  left: $l;
+  top: $t;
+}
+
+@mixin center{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
